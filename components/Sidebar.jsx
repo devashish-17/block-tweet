@@ -30,7 +30,7 @@ const Sidebar = () => {
                 <div className="h-16 w-16 mr-2"><UserCircleIcon className="h-16 w-16" /></div>
                 <div className='grow'>
                   <div className='flex items-center justify-between'>
-                    <span className="font-bold text-lg"> Firstname Lastname </span>
+                    <span className="font-bold text-lg"> Profile </span>
                     <EllipsisHorizontalIcon className="h-6 w-6 cursor-pointer" />
                   </div>
                   <span className="text-sm font-semibold text-gray-500">@UserName</span>

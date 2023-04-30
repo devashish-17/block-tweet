@@ -47,7 +47,7 @@ const Home: NextPage = () => {
 
       <main className=''>
 
-        <div className="flex mt-10 justify-center h-screen">
+        <div className="flex items-center justify-center h-screen">
           <div className="flex-col">
 
             {currentAccount === '' ? (

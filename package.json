@@ -12,7 +12,8 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-flip-move": "^3.0.5"
+    "react-flip-move": "^3.0.5",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",

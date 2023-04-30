@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
 import FlipMove from "react-flip-move";
@@ -109,7 +109,7 @@ function ProfileFeed() {
 
           <div className="mt-6 mx-5">
             <div className="grid">
-              <span className="font-bold text-xl"> Firstname Lastname </span>
+              <span className="font-bold text-xl"> You </span>
               <span className="text-sm font-semibold text-gray-500">@UserName</span>
             </div>
 

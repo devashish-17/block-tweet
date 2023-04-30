@@ -11,6 +11,7 @@ import {
   MapPinIcon,
   UserIcon
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -57,9 +58,11 @@ function TweetBox() {
   return (
     <div className="border-y-2 border-gray-300">
       <form className="mb-3 mx-4">
-        
+
         <div className="flex">
-        <div className="h-16 w-16 mr-2 mt-4"><UserIcon className="h-14 w-14 bg-slate-300 text-white rounded-full p-2" /></div>
+          <Link href={'/profile'}>
+            <div className="h-16 w-16 mr-2 mt-4"><UserIcon className="h-14 w-14 bg-slate-300 text-white rounded-full p-2" /></div>
+          </Link>
           <input
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}

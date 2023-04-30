@@ -11,7 +11,13 @@ const Post = forwardRef(
           <div className="w-full">
             <div className="flex justify-between">
               <div>
-                <p className="font-bold text-lg">{displayName}</p>
+              {personal ? (
+                <p className="font-bold xl:text-lg text-sm"> You </p>
+              ) : ("")}
+              {!personal ? (
+                <p className="font-bold xl:text-lg text-sm">{displayName}</p>
+              ) : ("")}
+                {/* <p className="font-bold xl:text-lg text-sm">{displayName}</p> */}
               </div>
               <EllipsisHorizontalIcon className="h-6 w-6 cursor-pointer" />
             </div>

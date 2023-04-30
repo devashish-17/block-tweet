@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Widgets = () => {
   return (
-    <div className='fixed w-1/4 right-0'>
+    <div className='fixed w-1/4 right-0 hidden lg:block'>
       <div className='flex bg-gray-200 mr-8 my-6 h-12 rounded-full items-center'>
         <MagnifyingGlassIcon className='h-6 w-6 mx-4' />
         <input type="text" placeholder='Search Twitter' className='bg-transparent outline-none' />

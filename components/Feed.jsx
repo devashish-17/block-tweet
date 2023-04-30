@@ -95,7 +95,7 @@ function Feed({ personal }) {
 
   return (
     <div className="flex justify-center h-screen">
-      <div className='border-x-2 w-2/5'>
+      <div className='border-x-2 w-[100%] lg:w-2/5'>
         <h1 className='text-2xl font-bold mx-6 my-7'> Home </h1>
         
         {/* Tweet Box */}

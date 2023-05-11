@@ -7,6 +7,8 @@ import ClipLoader from "react-spinners/ClipLoader";
 // import Widgets from '../components/Widgets'
 import Link from 'next/link';
 import PuffLoader from 'react-spinners/PuffLoader';
+import { RocketLaunchIcon } from '@heroicons/react/24/outline'
+
 
 declare global {
   interface Window {
@@ -49,6 +51,8 @@ const Home: NextPage = () => {
 
         <div className="flex items-center justify-center h-screen">
           <div className="flex-col">
+        <RocketLaunchIcon className='h-16 w-16 my-4 ml-8 text-orange-600' />
+        <p className='text-orange-600 font-bold text-xl font-mono mb-8'>Dev-Twitter</p>
 
             {currentAccount === '' ? (
               <div>

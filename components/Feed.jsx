@@ -68,7 +68,6 @@ function Feed({ personal }) {
   const deleteTweet = key => async () => {
     console.log(key);
 
-    // Now we got the key, let's delete our tweet
     try {
       const { ethereum } = window
 

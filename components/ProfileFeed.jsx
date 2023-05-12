@@ -34,7 +34,8 @@ function ProfileFeed() {
         updatedTweets.push(tweet);
       }
     }
-    return updatedTweets;
+    let reversedArray = updatedTweets.reverse();
+    return reversedArray;
   }
 
   const getMyTweets = async () => {
@@ -67,7 +68,6 @@ function ProfileFeed() {
   const deleteTweet = key => async () => {
     console.log(key);
 
-    // Now we got the key, let's delete our tweet
     try {
       const { ethereum } = window
 

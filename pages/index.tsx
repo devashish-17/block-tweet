@@ -48,16 +48,18 @@ const Home: NextPage = () => {
       </Head>
 
       <main className=''>
-
+        <div className="flex items-center gap-4">
+          <RocketLaunchIcon className='h-16 w-16 my-2 ml-6 text-orange-600' />
+          <p className='text-orange-600 font-bold text-xl font-mono'>Dev-Twitter</p>
+        </div>
         <div className="flex items-center justify-center h-screen">
           <div className="flex-col">
-        <RocketLaunchIcon className='h-16 w-16 my-4 ml-8 text-orange-600' />
-        <p className='text-orange-600 font-bold text-xl font-mono mb-8'>Dev-Twitter</p>
+
 
             {currentAccount === '' ? (
               <div>
-                  <PuffLoader color="rgba(234, 88, 12, 1)" size={120} />
-                  <p> Connecting Wallet... </p>
+                <PuffLoader color="rgba(234, 88, 12, 1)" size={120} />
+                <p> Connecting Wallet... </p>
               </div>
             ) : (
               <Link href={'/home'}>

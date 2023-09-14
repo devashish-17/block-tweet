@@ -58,6 +58,7 @@ const Home: NextPage = () => {
 
             {currentAccount === '' ? (
               <div>
+                <p> Use Polygon Matic </p>
                 <PuffLoader color="rgba(234, 88, 12, 1)" size={120} />
                 <p> Connecting Wallet... </p>
               </div>
